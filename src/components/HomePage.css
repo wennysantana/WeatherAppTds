@@ -1,0 +1,59 @@
+.city-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .city-list button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: white; 
+    text-align: center;
+    text-transform: none;
+  }
+
+  .weather-heading p {
+    font-size: 30px;
+    color: white; 
+    text-align: center;
+    text-transform: none;
+  }
+  
+  .weather-text {
+    color: white; 
+  }
+  
+  .city-text {
+    color: lightgray; 
+    font-weight: 300;
+  }
+ 
+  .custom-icon{
+    color: white;
+  }
+
+@media screen and (max-width: 768px) {
+  .city-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .weather-heading p {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .city-list {
+    grid-template-columns: 1fr;
+  }
+
+  .weather-heading p {
+    font-size: 20px;
+  }
+
+  .city-list button {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,157 @@
+html,
+body,
+#root {
+  height: 100vh; 
+  margin: 0;
+  padding: 0;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+  }
+  
+
+.city-page {
+  min-height: 100vh; 
+  color: white;
+  text-align: center;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+}
+.city-page .weather-info {
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.city-page h1 {
+  font-weight: lighter;
+  margin-top: 30px;
+}
+
+.time-info {
+  margin-top: 20px;
+  display: flex; 
+  justify-content: center; 
+}
+
+.time-info p {
+  margin: 20px;
+  font-weight: 300;
+}
+
+.time-info div {
+  margin-bottom: 10px;
+}
+
+.temperature-info {
+  display: flex;
+  align-items: center; 
+}
+
+.weather-info {
+  margin-top: 20px;
+}
+
+.weather-info p {
+  margin: 5px 0;
+}
+
+.current-temp {
+  font-size: 130px; 
+}
+
+.current-temp p {
+  margin: 0; 
+}
+
+.temp-info {
+  font-size: 20px;
+  margin-top: 10px; 
+}
+
+.temp-info p {
+  margin: 5px 0; 
+}
+
+.min-max-temp {
+  display: flex;
+  justify-content: space-between; 
+  margin-top: 10px; 
+}
+
+.min-max-temp div {
+  display: flex;
+  align-items: center; 
+}
+
+.min-max-temp div p {
+  margin: 0 5px; 
+}
+
+.weather-hot {
+  background: linear-gradient(to bottom, #4dbed0, #4dbed0, #3ca4b4);
+}
+
+.weather-mild {
+  background: linear-gradient(to bottom, #a4acb3, #a4a4b4, #525969);
+}
+
+.weather-cold {
+  background: linear-gradient(to bottom, #c8c8c8, #8b8b8b, #747474);
+}
+
+
+@media screen and (max-width: 768px) {
+    .city-page h1 {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+  
+    .current-temp {
+      font-size: 80px;
+    }
+  
+    .temp-info {
+      font-size: 16px;
+    }
+  
+    .time-info {
+      flex-wrap: wrap;
+    }
+  
+    .time-info p {
+      margin: 10px 0;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .current-temp {
+      font-size: 60px;
+    }
+  
+    .temp-info {
+      font-size: 14px;
+    }
+  
+    .time-info {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .time-info div {
+      margin-bottom: 0;
+    }
+  
+    .time-info p {
+      margin: 5px 0;
+    }
+  }
