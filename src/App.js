@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import HomePage from './components/HomePage';
 import CityPage from './components/CityPage';
-import { MdPublic } from 'react-icons/md';
 
 
 function App() {

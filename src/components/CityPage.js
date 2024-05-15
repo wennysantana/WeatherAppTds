@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
-import { WiDaySunny, WiCloud, WiNightClear, WiDayCloudy } from "react-icons/wi";
-import { FaLongArrowAltUp, FaLongArrowAltDown, FaArrowLeft } from "react-icons/fa";
+import { useParams } from "react-router-dom";
+import { WiDaySunny, WiNightClear, WiDayCloudy } from "react-icons/wi";
+import { FaLongArrowAltUp, FaLongArrowAltDown} from "react-icons/fa";
 import "./CityPage.css";
 
 function CityPage() {
   const { cityName } = useParams();
   const [city, setCity] = useState(null);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchCityWeather = async () => {
